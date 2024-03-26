@@ -1,1 +1,180 @@
-/* You can add global styles to this file, and also import other style files */
+/* CSS RESET ---------------------------------------------------------------------------CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+text-decoration: none;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+/* CSS RESET END ---------------------------------------------------------------------------CSS RESET END*/
+
+
+/* ROOT------------------------------------------------------------------------------------ROOT */
+:root{
+  /* VARIABLE OF FONT FAMILY */
+  --CamphorThin: CamphorThin;
+  --CamphorMedium: CamphorMedium;
+  --CamphorRegular: CamphorRegular;
+  --SailecThin: SailecThin;
+  --SailecMedium: SailecMedium;
+  --SailecBold: SailecBold;
+  /* VARIABLE OF FONT COLOR */
+  --text-dark: #0e2b5c;
+  --text-dark-gray: #525f7f;
+  --text-light-gray: #cfd7df;
+  --text-green-light: #12b6b0;
+  --text-green-medium: #118686;
+  --text-green-dark: #115e5f;
+  /* VARIABLE OF FONT GRAD */
+  --green-grad-1: linear-gradient(15deg, #13547a 0%, #80d0c7 100%) !important;
+  --green-grad-2: linear-gradient(to top, #37ecba 0%, #72afd3 100%) !important;
+  --magenta-grad-1: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%) !important;
+  --blue-grad-1: linear-gradient(-225deg, #22e1ff 0%, #1d8fe1 48%, #625eb1 100%) !important;
+}
+/* END ROOT-----------------------------------------------------------------------------END ROOT */
+
+/* FONT FAMILY FACE ---------------------------------------------------------------------FONT FAMILY FACE*/
+
+@font-face {
+    font-family: CamphorThin;
+    src: url(assets/fonts/CamphorThin/Camphor\ W01\ Thin.woff);
+    src: url(assets/fonts/CamphorThin/Camphor\ W01\ Thin.woff2);
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: CamphorMedium;
+    src: url(assets/fonts/CamphorMedium/Camphor\ W01\ Medium.woff);
+    src: url(assets/fonts/CamphorMedium/Camphor\ W01\ Medium.woff2);
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: CamphorRegular;
+    src: url(assets/fonts/CamphorRegular/Camphor\ W01\ Regular.woff);
+    src: url(assets/fonts/CamphorRegular/Camphor\ W01\ Regular.woff2);
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: SailecThin;
+    src: url(assets/fonts/SailecThin/Sailec\ Thin.woff);
+    src: url(assets/fonts/SailecThin/Sailec\ Thin.woff2);
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: SailecMedium;
+    src: url(assets/fonts/SailecMedium/Sailec\ Medium.woff);
+    src: url(assets/fonts/SailecMedium/Sailec\ Medium.woff2);
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: SailecBold;
+    src: url(assets/fonts/SailecBold/Sailec\ Bold.woff);
+    src: url(assets/fonts/SailecBold/Sailec\ Bold.woff2);
+    font-weight: normal;
+  }
+
+  /* FONT FAMILY FACE END ----------------------------------------------------------------FONT FAMILY FACE END*/
+
+  /* TEXT COLOR TYPE --------------------------------------------------------------------------TEXT COLOR TYPE*/
+
+  .text-dark {
+    color: #0e2b5c !important;
+  }
+  .text-dark-gray {
+    color: #525f7f !important;
+  }
+  .text-light-gray {
+    color: #cfd7df !important;
+  }
+  .text-green-light {
+    color: #12b6b0 !important;
+  }
+  .text-green-medium {
+    color: #118686 !important;
+  }
+  .text-green-dark {
+    color: #115e5f !important;
+  }
+
+  /* TEXT COLOR END --------------------------------------------------------------------------TEXT COLOR END*/
+
+  /* TEXT GRAD ------------------------------------------------------------------------------------TEXT GRAD*/
+
+  .text-grad {
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+  }
+  .green-grad-1 {
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%) !important;
+  }
+  .green-grad-2 {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#37ecba), to(#72afd3)) !important;
+    background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%) !important;
+  }
+  .magenta-grad-1 {
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%) !important;
+  }
+  .blue-grad-1 {
+    background-image: linear-gradient(-225deg, #22e1ff 0%, #1d8fe1 48%, #625eb1 100%) !important;
+  }
+
+   /* TEXT GRAD END-------------------------------------------------------------------------------TEXT GRAD END*/
+
+   /* CUSTOM CSS ------------------------------------------------------------------------------------CUSTOM CSS*/
+
+   body{
+    scroll-behavior: smooth;
+    line-height: 1.5;
+    box-sizing: border-box;
+    background: linear-gradient(192deg, #b2cbe1, #f6f9fc 42%);
+   }
+   .alt__container{
+      max-width: 1459px;
+      margin: 0 auto;
+   }
+   .position__relative{
+    position: relative;
+   }
+   .position__absolute{
+    position: absolute;
+   }
+  
+ 
+
